@@ -1,0 +1,56 @@
+<h1>----------------------------</h1>
+<div>
+  <input type="number" [(ngModel)]="num1" placeholder="Enter number 1">
+  <input type="number" [(ngModel)]="num2" placeholder="Enter number 2">
+  <button (click)="addNumbers()">Add</button>
+</div>
+
+<div *ngIf="result !== undefined">
+  <p>Result: {{ result }}</p>
+</div>
+
+
+<h1>----------------------------</h1>
+<!-- --------------------- -->
+<input type="text" [(ngModel)]="textData" placeholder="Live Updates">
+<br>
+<h1>
+  {{ textData }}
+</h1>
+
+<h1>----------------------------</h1>
+<!-- --------------------- -->
+
+<input type="text" [(ngModel)]="firstName">
+<input type="text" [(ngModel)]="lastName">
+<br>
+<h1>
+  {{ firstName + lastName }}
+</h1>
+
+<!-- --------------------- -->
+<h1>----------------------------</h1>
+<div>
+  <h2>Array Data</h2>
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+</div>
+
+<!-- --------------------- -->
+<h1>----------------------------</h1>
+
+<input type="number" [(ngModel)]="number1" placeholder="Enter number 1">
+<input type="number" [(ngModel)]="number2" placeholder="Enter number 2">
+<button (click)="productOfNumbers()">Product</button>
+
+<div *ngIf="result !== undefined">
+  <p>Result: {{ resultOfProduct }}</p>
+</div>
+
+<!-- --------------------- -->
+<h1>----------------------------</h1>
+<h1>---------Question 9-------------------</h1>
+
+
+<app-student-percentage-cal />
